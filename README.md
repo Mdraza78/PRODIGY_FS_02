@@ -21,7 +21,6 @@ Develop a secure Employee Management System with CRUD operations using the MERN 
 | 🔐 **JWT Authentication** | Protected routes using JSON Web Tokens                                    |
 | 🔄 **Real-time Updates** | Auto-refresh after CRUD operations                                        |
 | 📱 **Responsive Design** | Optimized for desktop and mobile devices                                  |
-## 🛠️ Tech Stack Used
 
 ## 🛠️ **Tech Stack**  
 **Frontend**:  
