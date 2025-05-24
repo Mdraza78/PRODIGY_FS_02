@@ -17,14 +17,14 @@ const Login = () => {
     setError("");
     
     try {
-      const response = await axios.post("http://localhost:5000/api/login", form);
+      const response = await axios.post("http://localhost:5000/api/admin-login", form);
       
       // Store token in localStorage
       localStorage.setItem("token", response.data.token);
       localStorage.setItem("user", JSON.stringify(response.data.user));
       
       // Redirect to dashboard
-      navigate("/dashboard");
+      navigate("/admin/dashboard");
     } catch (err) {
       setError(err.response?.data?.message || "Login failed. Please try again.");
     }
@@ -50,12 +50,7 @@ const Login = () => {
         required 
       />
       <button type="submit">Login</button>
-      <p>
-        Don't have an account?{" "}
-        <b><u><span className="auth-link" onClick={() => navigate("/register")}>
-          Register here
-        </span></u></b>
-      </p>
+      
     </form>
   </div>
 );

@@ -21,7 +21,7 @@ const Register = () => {
     try {
       await axios.post("http://localhost:5000/api/register", form);
       setSuccess("Registration successful! Please login.");
-      setTimeout(() => navigate("/login"), 1500);
+      setTimeout(() => navigate("/admin/login"), 1500);
     } catch (err) {
       setError(err.response?.data?.message || "Registration failed. Please try again.");
     }
@@ -76,7 +76,7 @@ const Register = () => {
         <button type="submit">Register</button>
         <p>
           Already have an account?{" "}
-          <b><u><span className="auth-link" onClick={() => navigate("/login")}>
+          <b><u><span className="auth-link" onClick={() => navigate("/admin/login")}>
             Login here
           </span></u></b>
         </p>
