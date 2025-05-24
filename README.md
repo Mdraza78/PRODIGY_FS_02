@@ -66,7 +66,7 @@ npm start
 - JWT_SECRET=your_jwt_secret_key
 ```
 
-🔒 Security Highlights
+## 🔒 Security Highlights
 - Password hashing with bcryptjs
 
 - API protection using JWT middleware
